@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCP-1</title>
+    <link rel="stylesheet" href="style.css">
+    <link class="icon" rel="icon" type="image/jpeg" href="icon - Copy.JPG">
+</head>
+
+<body>
+
+    <header>
+        <h1>ROCK PAPER SCISSORS MINUS ONE.....</h1>
+    </header>
+
+    <main>
+        <div class="upper">
+            <div class="choices">
+                <div class="choice" id="rock">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="choice" id="paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="choice" id="scissors">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+            <div class="score">
+                <div class="user-score">
+                    <h2>User Score: <span id="user-score">0</span></h2>
+                </div>
+                <div class="comp-score">
+                    <h2>Comp Score: <span id="comp-score">0</span></h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p style="padding-right: 11vw;">Make your 2 choices!</p>
+
+        <br>
+        <hr>
+
+        <div class="hidden" id="minus-one">
+            <h4>Your Choice:</h4>
+            <div class="user">
+                
+                <div class="user-choice" id="rock">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="user-choice" id="paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="user-choice" id="scissors">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+            <h4>Comp Choice:</h4>
+            <div class="comp">
+                
+                <div class="comp-choice" id="rock">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="comp-choice" id="paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="comp-choice" id="scissors">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+
+            <div class="hidden user-1">
+                <h4>Your final Choice:</h4>
+                <div class="user-choice-1" id="rock">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="user-choice-1" id="paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="user-choice-1" id="scissors">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+
+            <div class="hidden comp-1">
+                <h4>Comp final Choice:</h4>
+                <div class="comp-choice-1" id="rock">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="comp-choice-1" id="paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="comp-choice-1" id="scissors">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <div id="result-message" class="result-message">result </div>
+        <br>
+        <button class="button" id="new-game">New Game</button>
+        <button class="button" id="next-round">Next Round</button>
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
