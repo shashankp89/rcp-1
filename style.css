@@ -5,20 +5,17 @@
     text-align: center;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
 body {
     background-color: #00809D;
     color: #FCF8DD;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header */
+
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
     background-color: #FCF8DD;
     padding: 1rem;
     font-size: 1.5rem;
@@ -26,8 +23,31 @@ header {
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+header:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+footer {
+    background-color: #01121f;
+    color: #f1f0ec;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+a {
+    color: #f1f0ec;
+    text-decoration: none;
+}
 
-/* Scoreboard */
+a:hover {
+    text-decoration: underline;
+    color: #bde6c4;  
+    text-transform: uppercase;
+}
+
+ 
 .score {
     margin: 2rem auto;
     padding: 1.5rem 2rem;
@@ -65,7 +85,7 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-/* Game choices */
+
 .choices {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +113,7 @@ img {
     transform: scale(1.1);
 }
 
-/* Gameplay sections */
+ 
 #minus-one,
 .user,
 .comp,
@@ -107,7 +127,7 @@ img {
     padding: 2vw;
 }
 
-/* Upper layout container */
+ 
 .upper {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +137,7 @@ img {
     background-color: #00809D;
 }
 
-/* Buttons */
+ 
 .button {
     display: inline-flex;
     background-color: #FCF8DD;
@@ -138,7 +158,7 @@ img {
     transform: scale(1.05);
 }
 
-/* Result message */
+ 
 .result-message {
     font-size: 1.5rem;
     font-weight: bold;
@@ -153,18 +173,18 @@ img {
 }
 
 .result-win {
-    color: #00FF7F; /* SpringGreen */
+    color: #00FF7F;  
 }
 
 .result-lose {
-    color: #FF4500; /* OrangeRed */
+    color: #FF4500;  
 }
 
 .result-draw {
-    color: #FFD700; /* Gold */
+    color: #FFD700; 
 }
 
-/* Visibility toggle */
+ 
 .hidden {
     visibility: hidden;
 }
@@ -173,7 +193,7 @@ img {
     visibility: visible;
 }
 
-/* Responsive Design */
+ 
 @media screen and (max-width: 768px) {
     .upper,
     .choices,
